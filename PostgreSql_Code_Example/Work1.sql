@@ -101,4 +101,3 @@ select avg(balance) as avarage,city from customer group by city having avg(balan
 select avg(balance) as avarage,city from customer group by city having avg(balance)>5000 and city like '%s%'
 select avg(balance) as avarage,city from customer group by city having avg(balance)>5000 or city like '%n%'
 
-
