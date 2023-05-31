@@ -1,0 +1,12 @@
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\bin\Debug\PostgreProductProject.exe.config
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\bin\Debug\PostgreProductProject.exe
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\bin\Debug\PostgreProductProject.pdb
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.Form1.resources
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.FrmProduct.resources
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.Properties.Resources.resources
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.exe
+C:\Users\ASUS\Desktop\postgreproject\PostgreProductProject\PostgreProductProject\obj\Debug\PostgreProductProject.pdb
