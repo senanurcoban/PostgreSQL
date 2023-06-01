@@ -62,6 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label2.Location = new System.Drawing.Point(653, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 18);
@@ -79,6 +80,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label1.Location = new System.Drawing.Point(679, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 18);
@@ -96,6 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label3.Location = new System.Drawing.Point(654, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 18);
@@ -112,6 +115,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label4.Location = new System.Drawing.Point(706, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 18);
@@ -128,6 +132,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label5.Location = new System.Drawing.Point(688, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 18);
@@ -144,6 +149,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label6.Location = new System.Drawing.Point(709, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 18);
@@ -153,6 +159,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label7.Location = new System.Drawing.Point(689, 259);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 18);
@@ -168,63 +175,75 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(800, 255);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(188, 26);
             this.comboBox1.TabIndex = 30;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // BtnSearch
             // 
+            this.BtnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+            this.BtnSearch.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BtnSearch.Location = new System.Drawing.Point(1056, 211);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Size = new System.Drawing.Size(102, 38);
             this.BtnSearch.TabIndex = 35;
             this.BtnSearch.Text = "Search";
-            this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnSearch.UseVisualStyleBackColor = false;
             // 
             // BtnUpdate
             // 
+            this.BtnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+            this.BtnUpdate.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BtnUpdate.Location = new System.Drawing.Point(1056, 167);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(102, 38);
             this.BtnUpdate.TabIndex = 34;
             this.BtnUpdate.Text = "Update";
-            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.UseVisualStyleBackColor = false;
             // 
             // BtnDelete
             // 
+            this.BtnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+            this.BtnDelete.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BtnDelete.Location = new System.Drawing.Point(1056, 123);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(102, 38);
             this.BtnDelete.TabIndex = 33;
             this.BtnDelete.Text = "Delete";
-            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.UseVisualStyleBackColor = false;
             // 
             // BtnAdd
             // 
+            this.BtnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+            this.BtnAdd.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BtnAdd.Location = new System.Drawing.Point(1056, 79);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(102, 38);
             this.BtnAdd.TabIndex = 32;
             this.BtnAdd.Text = "Add";
-            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.UseVisualStyleBackColor = false;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnList
             // 
+            this.BtnList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+            this.BtnList.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BtnList.Location = new System.Drawing.Point(1056, 35);
             this.BtnList.Name = "BtnList";
             this.BtnList.Size = new System.Drawing.Size(102, 38);
             this.BtnList.TabIndex = 31;
             this.BtnList.Text = "List";
-            this.BtnList.UseVisualStyleBackColor = true;
+            this.BtnList.UseVisualStyleBackColor = false;
             this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1217, 333);
             this.Controls.Add(this.BtnSearch);
             this.Controls.Add(this.BtnUpdate);
@@ -247,6 +266,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

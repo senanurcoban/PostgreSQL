@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,25 @@ namespace PostgreProductProject
             DataSet ds = new DataSet();
             da.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            connection.Open();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter("select * from categories ",connection);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            comboBox1.DisplayMember = "categoryname";
+            comboBox1.ValueMember = "categoryid";
+            comboBox1.DataSource = dt;
+            connection.Close();
+         
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            TxtProductName.Text = comboBox1.SelectedValue.ToString();
 
         }
     }

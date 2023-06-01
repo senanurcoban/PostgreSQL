@@ -64,7 +64,13 @@ namespace PostgreProductProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            connection.Open();
+            NpgsqlCommand command1 = new NpgsqlCommand("insert into categories(categoryid,categoryname) values (@p1,@p2)", connection);
+            command1.Parameters.AddWithValue("@p1",int .Parse( TxtCategoryid.Text));
+            command1.Parameters.AddWithValue("@p2", TxtCategoryName.Text);
+            command1.ExecuteNonQuery();            // değişiklikler veri tabanına yansıtılır.
+            connection.Close();
+            MessageBox.Show("Adding category was successful.");
         }
 
         private void button4_Click(object sender, EventArgs e)
