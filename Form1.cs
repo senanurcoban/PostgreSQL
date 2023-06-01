@@ -49,7 +49,12 @@ namespace PostgreProductProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            connection.Open();
+            NpgsqlCommand command = new NpgsqlCommand("delete from categories where categoryid=@p1", connection);
+            command.Parameters.AddWithValue("@p1", int.Parse(TxtCategoryid.Text));
+            command.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("The category deletion was successful.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -75,7 +80,13 @@ namespace PostgreProductProject
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            connection.Open();
+            NpgsqlCommand command2 = new NpgsqlCommand("update categories set categoryname=@p1 where  categoryid=@p2", connection);
+            command2.Parameters.AddWithValue("@p2", int.Parse(TxtCategoryid.Text));
+            command2.Parameters.AddWithValue("@p1", TxtCategoryName.Text);
+            command2.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("The category update was successful.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -48,6 +48,7 @@
             this.BtnDelete = new System.Windows.Forms.Button();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.BtnList = new System.Windows.Forms.Button();
+            this.BtnView = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -203,6 +204,7 @@
             this.BtnUpdate.TabIndex = 34;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnDelete
             // 
@@ -214,6 +216,7 @@
             this.BtnDelete.TabIndex = 33;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnAdd
             // 
@@ -239,12 +242,25 @@
             this.BtnList.UseVisualStyleBackColor = false;
             this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
+            // BtnView
+            // 
+            this.BtnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+            this.BtnView.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnView.Location = new System.Drawing.Point(1056, 255);
+            this.BtnView.Name = "BtnView";
+            this.BtnView.Size = new System.Drawing.Size(102, 38);
+            this.BtnView.TabIndex = 36;
+            this.BtnView.Text = "View";
+            this.BtnView.UseVisualStyleBackColor = false;
+            this.BtnView.Click += new System.EventHandler(this.BtnView_Click);
+            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1217, 333);
+            this.Controls.Add(this.BtnView);
             this.Controls.Add(this.BtnSearch);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnDelete);
@@ -267,7 +283,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProduct";
@@ -299,5 +315,6 @@
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.Button BtnList;
+        private System.Windows.Forms.Button BtnView;
     }
 }
