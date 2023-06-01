@@ -91,4 +91,3 @@ select now()
 -- Age command
 select age(timestamp '07.05.2023')
 select  name,date,age(now(),date) from books
-

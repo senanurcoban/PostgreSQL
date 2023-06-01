@@ -331,4 +331,3 @@ on faculty
 for each row
 execute procedure test2();  
 
-
