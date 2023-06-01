@@ -329,23 +329,6 @@ create trigger TestTrig2
 after insert
 on faculty
 for each row
-execute procedure test2();
-
-
-
-
-
-
-
-	 
-
-
-
-
-
-
- 
- 
-     
+execute procedure test2();  
 
 
