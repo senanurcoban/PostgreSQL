@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,10 +37,14 @@ namespace PostgreProductProject
         {
 
         }
-
+        NpgsqlConnection connection = new NpgsqlConnection("server=localHost;port=5432;Database=dbproducts;user ID=postgres;password=12345");
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string query = "select * from categories";
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(query, connection);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void button3_Click(object sender, EventArgs e)
